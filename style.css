@@ -1,0 +1,646 @@
+/*
+Theme Name: Greenacres B&B
+Theme URI: https://greenacresb&b.co.uk
+Author: Nick Pocock
+Author URI: https://dailyelectronicmusic.com
+Description: A theme for Greenacres B&B located in Dorset.
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - General Styles
+ * 2.0 - Navbar Styles
+ * 3.0 - Home Page Banner
+ * 4.0 - Reseveration Info
+ * 5.0 - Footer
+ * 6.0 Rooms and Tariff 
+ * 7.0 Responsive Styles
+ * 8.0 Welcome Styles
+ * 9.0 - Portfolio Styles
+ * 10.0 - Contact Styles
+ * 11.0 - ToDo Styles
+ * 12.0 - Gallery
+ * ----------------------------------------------------------------------------
+ */
+
+ modal.fade.in {
+  top: auto;
+}
+
+ .navbar-header img {
+    max-height: 100%;
+    width: auto;
+}
+
+/* 1.0 - General Styles */
+
+.about-image {
+	margin-bottom:1em;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    color: #73726C;
+}
+.btn,
+a,
+a:hover {
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    line-height: 1em;
+    margin: 0;
+}
+h1 {
+    font-size: 5em;
+}
+h1.title,
+h2 {
+    font-size: 2em;
+    line-height: 3em;
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.70em;
+}
+h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.75em;
+}
+h5 {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+}
+h6 {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    line-height: 1.5em;
+    font-family: 'Lato', sans-serif;
+    line-height: 1em;
+    font-size: 24px;
+    font-weight: 300;
+}
+p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.btn {
+    border: none !important;
+    border-radius: 0;
+    padding: 5px 30px;
+}
+.btn-default {
+    background: #019446;
+    box-shadow: none !important;
+    color: #fff;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active {
+    box-shadow: none !important;
+    background: #;
+    color: #fff;
+    outline: none !important;
+}
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #bfa145;
+    border-color: #bfa145;
+}
+.pagination>li>a,
+.pagination>li>span {
+    color: #bfa145;
+}
+.spacer-home {
+    padding: 3em 0;
+}
+
+.spacer {
+    padding: 3em 0;
+    margin:6em 0em 0em 0em;
+}
+
+
+/*.wp-post-image {
+    padding-bottom:20px;
+} */
+
+
+/* 2.0 - Navbar Styles */
+
+.navbar {
+    margin: 0;
+}
+.navbar-nav {
+    margin: 0 -15px;
+}
+.navbar-nav > li > a {
+    font-size: 1em;
+    line-height: 4.26em;
+    padding: 10px 0 10px 30px;
+}
+.navbar-default {
+    border: none;
+    background: #eeeeee;
+}
+.navbar-brand {
+    height: 83px;
+}
+.fadeInDown {
+    padding-bottom: 30px;
+}
+
+.navbar-default 
+.navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #000;
+    font-weight: 400;
+    background-color: #eeeeee;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -20px;
+}
+
+
+/* 3.0 - Home Page Banner */
+
+.banner {
+    position: relative;
+    color: #fff;
+}
+.banner p {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+.banner img.img-responsive {
+    width: 100%;
+    height: auto;
+}
+.banner .welcome-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+}
+.banner .welcome-message .wrap-info {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.banner .welcome-message .wrap-info .information {
+    display: table-cell;
+    vertical-align: middle;
+}
+.banner .arrow-nav {
+    position: absolute;
+    bottom: -3.5em;
+    background-color: #bfa145;
+    height: 7em;
+    width: 7em;
+    display: inline-block;
+    z-index: 100;
+    left: 50%;
+    margin-left: -52px;
+    color: #fff;
+    border-radius: 50%;
+}
+.banner .arrow-nav i {
+    font-size: 5em;
+    line-height: 105px;
+}
+.banner .arrow-nav:hover {
+    background: #756534;
+}
+
+/* 4.0 - Reseveration Info */
+
+.reserve-info {
+    background-color: #fff;
+}
+.services {
+    background-color: #dedbd3;
+}
+.services .caption {
+    background-color: #b9b2a0;
+    color: #46433b;
+    padding: 1.5em;
+}
+.services .caption a {
+    color: #585650;
+    font-size: 1.25em;
+}
+.services .caption a:hover {
+    color: #fff;
+}
+.carousel-control {
+    width: 10%;
+    background: none !important;
+}
+.carousel-control i.fa {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.carousel img {
+    width: 100%;
+}
+
+/* 5.0 - Footer */
+
+footer {
+    background-color: #585650;
+    color: #AEAEAC;
+}
+footer.spacer {
+    padding: 3em 0;
+}
+footer h4 {
+    color: #DCDCDC;
+}
+footer a,
+footer p {
+    line-height: 1.5em;
+    font-size: 0.85em;
+    color: #AEAEAC;
+}
+footer a:hover {
+    color: #fff;
+}
+footer .subscribe .form-control {
+    height: 30px;
+    padding: 4px 12px;
+    border: none;
+}
+footer .subscribe .input-group-btn:last-child>.btn {
+    margin: 0;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+    box-shadow: none !important;
+    background: #016b30;
+    color: #fff;
+    outline: none !important;
+}
+footer .subscribe .input-group {
+    margin-bottom: 1em;
+}
+footer .subscribe .social a {
+    font-size: 1.5em;
+    margin-right: 0.25em;
+}
+.copyright {
+    background-color: #252423;
+    padding: 0.6em 0;
+    font-size: 0.85em;
+    color: #7F7F7F;
+}
+.copyright a {
+    color: #AEAEAC;
+}
+
+
+.toTop {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+.toTop:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* 6.0 Rooms and Tariff */
+
+.rooms {
+    margin-bottom: 2em;
+}
+.rooms .info {
+    padding: 1.5em;
+    background-color: #E8E7E0;
+}
+.room-features .amenitites li {
+    margin-bottom: 1em;
+}
+.room-features .size-price {
+    background-color: #C7C5BB;
+    padding: 2em 0;
+    text-align: center;
+    color: #fff;
+    height: 10.97em;
+    line-height: 3em;
+}
+.room-features .size-price span {
+    display: block;
+    font-size: 2em;
+}
+.gallery .gallery-image {
+    margin-bottom: 2em;
+    display: inline-block;
+}
+.gallery .gallery-image img {
+    width: 100%;
+}
+
+.room-details {
+    padding-left: 10px;
+}
+
+.room-features {
+    margin-top:2em;
+} 
+
+/* 7.0 Responsive Styles */
+
+@media (max-width: 991px) {}
+@media (max-width: 767px) {
+    .navbar-toggle {
+        margin-top: 23px;
+    }
+    .navbar-default .navbar-toggle {
+        background-color: #019446;
+    }
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #036631;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-nav > li > a {
+        line-height: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        line-height: 1em;
+        margin-bottom: 20px;
+    }
+    .banner p {
+        font-family: 'Lato', sans-serif;
+    }
+    .banner .arrow-nav {
+        margin-left: -22px;
+        height: 3em;
+        width: 3em;
+        bottom: -1.5em;
+    }
+    .banner .arrow-nav i {
+        font-size: 2em;
+        line-height: 45px;
+    }
+    .spacer {
+        padding: 4em 0;
+    }
+    .reserve-info h3 {
+        margin-top: 2em;
+    }
+    .services div.col-sm-4 {
+        margin-bottom: 2em;
+    }
+    footer.spacer {
+        padding: 1em 0 3em 0;
+    }
+    footer h4 {
+        margin-top: 2em;
+    }
+    .room-features .size-price {
+        margin-bottom: 2em;
+    }
+
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+     margin-left: 0px; 
+    }
+}
+
+/* 8.0 Welcome Styles */
+
+#welcome {
+    padding-top: 35px;
+    padding-bottom: 70px;
+    background-color: #dedbd3;
+}
+.welcome-text {
+    padding-bottom: 43px;
+}
+
+/* 9 .0 Portfolio Styles */
+
+.no-padding {
+    padding: 0;
+}
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(1, 148, 70, .9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Lato', sans-serif;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* 10.0 Contact Page */
+
+#maps {
+    margin: 40px 0;
+}
+
+.subscribe li {
+    list-style: none;
+}
+
+/* 11.0 TODO Page */
+
+.thumbnail {
+    position: relative;
+}
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+}
+
+.wrapper {
+  display: inline-block;
+  position: relative;  
+}
+
+.wrapper img {
+  display: block;
+  max-width:100%;
+}
+
+.wrapper .overlay {
+  position: absolute;
+  top:50%;
+  left:0;
+  width:100%;
+  height:100%;
+  color:white;
+}
+
+/* 12.0 Gallery Page */
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+.carousel.fade {
+  opacity: 1;
+}
+.carousel.fade .item {
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  left: 0 !important;
+  opacity: 0;
+  top:0;
+  position:absolute;
+  width: 100%;
+  display:block !important;
+  z-index:1;
+}
+.carousel.fade .item:first-child {
+  top:auto;
+  position:relative;
+}
+.carousel.fade .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  z-index:2;
+}
+
+/* Custom styles for the carousel indictators when on mobile due to problems with the absolute positioning */
+
+
+@media only screen and (max-width: 500px) {
+	.carousel-indicators {
+	    position: relative;
+	    bottom: 17px;
+	    left: 0%;
+	    z-index: 15;
+	    width: 100%;
+	    padding-left: 0;
+	    margin-left: 0%;
+	    text-align: center;
+	    list-style: none;
+	    top: 15px;
+	}
+}
